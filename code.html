@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0"/>
+        <link rel="stylesheet" href="display.css">
+        <!--font awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:
+        wght@400;600;&family=Roboto+Mono&display=swap" rel="stylesheet">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@0,400;0,500;0,600;&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+        </style>
+
+    <title>MERRY CHRISTMAS</title>
+    </head>
+
+    <body>
+        <div class="mus-cont">
+            <button id="list">
+                <i class="fa-solid fa-list"></i>
+            </button>
+            <img id="song-image" src="1.png"/>
+            
+            <div class="song-deets">
+            <p id="song-name">Snowman</p>
+            <p id="song-artist">Sia</p>
+            </div>
+
+            <div class="options">
+                <button id="shuffle">
+                    <i class="fa-solid fa-shuffle"></i>
+                </button>
+                <button id="previous">
+                    <i class="fa-solid fa-backward-step"></i>
+                </button>
+                <button id="play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
+                <button id="pause" class="hide">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button id="next">
+                    <i class="fa-solid fa-forward-step"></i>
+                </button>
+                <button id="repeat">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+            </div>
+            <audio id="audio" preload="metadata"></audio>
+            <div id="progress-bar">
+                <div id="current-progress"></div>
+            </div>
+            <div class="time-container">
+                <span id="current-time">0:00</span>
+                <span id="max-duration">0:00</span>
+            </div>
+            <div id="playlist-container">
+                <button id="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <ul id="playlist-songs"></ul>
+            </div>
+        </div>
+
+
+        <img id="xmas" src="text.png"/>
+
+
+        <div class="letter-box">
+            <img id="winrina" src="win.jpeg"/>
+            <img id="yna" src="YNA.png"/>
+            <img id="mess" src="message.png"/>
+        </div>
+        <div class="feedback">
+            <p id="like">Did you liked it? ❤</p>
+            <button id="no">
+                <i class="fa-solid fa-n"></i>
+            </button>
+            <button id="yes">
+                <i class="fa-solid fa-y"></i>
+            </button>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="inter.js" defer></script>
+    </body>
+</html> 

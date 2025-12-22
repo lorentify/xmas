@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffebcd 50%,
+    #a51a2a 50%);
+
+}
+
+.mus-cont {
+    font-size: 16px;
+    width: 80vw;
+    max-width: 25em;
+    background-color: #ffffff;
+    padding: 3em 1.8em;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.5em;
+    box-shadow: 0.6em 1.2em 3em rgba(0, 0, 0, 0.25);
+}
+
+#song-image {
+    width: 100%;
+    margin-top: 1.25em;
+}
+
+#list {
+    float: right;
+}
+
+.song-deets {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
+.song-deets #song-name {
+    font-size: 1.3em;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.song-deets #song-artist {
+    font-size: 0.8em;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1.25em;
+    margin: 1.25em 0 0.6em 0;
+}
+
+.mus-cont button {
+    border: none;
+    background-color: transparent;
+}
+
+#play,#pause {
+    height: 2.5em;
+    width: 2.5em;
+    font-size: 1.8em;
+    background-color: #a51a2a;
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+#previous,#next {
+    color: #16191e;
+    font-size: 1.4em;
+}
+
+#shuffle,#repeat {
+    color: #949494;
+    font-size: 1em;
+}
+
+.hide {
+    display: none;
+}
+
+#progress-bar {
+    position: relative;
+    width: 100%;
+    height: 0.3em;
+    background-color: #eeeeee;
+    margin: 1em 0;
+    border-radius: 0.18em;
+    cursor: pointer;
+}
+
+#current-progress {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    background-color: #a51a2a;
+    border-radius: 0.18em;
+}
+
+.time-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto Mono", monospace;
+}
+
+#playlist-container {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;           /* smaller, centered modal */
+    max-width: 400px;
+    height: auto;          /* fit content */
+    max-height: 80vh;      /* never exceed viewport height */
+    overflow-y: auto;      /* scroll if too many songs */
+    background-color: #ffffff;
+    border-radius: 0.6em;
+    padding: 2em 1em;
+    font-family: "Poppins", sans-serif;
+    z-index: 100;
+    display: none;
+}
+
+#close {
+    background-color: transparent;
+    border: none;
+    height: 2em;
+    width: 2em;
+    cursor: pointer;
+    margin-left: 90%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+    cursor: pointer;
+}
+
+.playlist-song-details {
+    margin-left: 1em;
+}
+
+.playlist-song-details > span {
+    display: block;
+}
+
+#playlist-song-artist-album {
+    color: #949494;
+    font-size: 0.8em;
+}
+
+button.active i {
+    color: #a51a2a;
+}
+
+@media screen and (max-width: 450px){
+    .mus-cont{
+        font-size: 14px;
+    }
+}
+
+.playlist-image-container {
+    width: 3em;
+    height: 3em;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.playlist-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* for another box */
+
+.letter-box {
+    font-size: 16px;
+    width: 80vw;
+    height: 50em;
+    max-width: 50em;
+    max-height: 70em;
+    background-color: #ffffff;
+    padding: 3em 1.8em;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    border-radius: 0.5em;
+    box-shadow: 0.6em 1.2em 3em rgba(0, 0, 0, 0.25);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#yna {
+    width: 300px;
+    height: 100px;
+}
+
+#mess {
+    width: 80%;
+    height: auto;
+
+}
+
+#xmas {
+    position: flex;
+    left: 50%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+}
+
+.feedback {
+    font-size: 16px;
+    width: 80vw;
+    max-width: 30em;
+    background-color: #ffffff;
+    padding: 3em 1.8em;
+    transform: translate(-50%, -50%);
+    position: relative;
+    top: 40%;
+    left: 50%;
+    border-radius: 0.5em;
+    box-shadow: 0.6em 1.2em 3em rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+#like {
+    text-align: center;
+    font-size: 2em;
+    font-family: "Poppins", sans-serif;
+}
+
+#yes {
+    background-color: #a51a2a;
+    color: #ffebcd;
+    font-size: 2em;
+    border-radius: 0.2em;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+#no {
+    background-color: #a51a2a;
+    color: #ffebcd;
+    font-size: 2em;
+    border-radius: 0.2em;
+    margin-top: 2%;
+    margin-left: 40%;
+}
